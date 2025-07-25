@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import svgSkull from '../../../../../../public/skull.svg'
-import svgSmiley from '../../../../../../public/smiley.svg'
-import '../../../../../styles/Scroll.css'
+import svgSkull from '../../../../public/skull.svg'
+import svgSmiley from '../../../../public/smiley.svg'
+import './Scroll.css'
 
 const ItemContentWrong      = (props) => <img className="scrl__wrng" src={props.image}/>
 const ItemContentCorrect    = (props) => <img className="scrl__crct" src={props.image}/>

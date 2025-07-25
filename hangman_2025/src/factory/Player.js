@@ -1,4 +1,4 @@
-import { GAMESTATUS } from '../../../models/Game'
+import { GAMESTATUS } from '@/models/Game'
 
 class PlayerFactory{
     emptyPlayer = () => {

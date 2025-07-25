@@ -11,7 +11,7 @@
 
 .gm--prmry {
     border-color: RGB(6,6,6);
-    background: url('../../public/800x600-1x2x-min.jpg') no-repeat;
+    background: url('../../../../public/800x600-1x2x-min.jpg') no-repeat;
     background-size: contain;
     font-family: 'Pixel';
 }

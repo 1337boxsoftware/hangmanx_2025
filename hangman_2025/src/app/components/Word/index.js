@@ -1,6 +1,6 @@
 import React from 'react'
-import Letter from './Letter'
-import "../../../../../styles/Word.css"
+import Letter from '@/components/Letter'
+import "./Word.css"
 
 const EmptySpace        = ()        => <div></div>
 const Bar               = ()        => <div className="wrd-grd__bar wrd-grd__bar--prmry"></div>

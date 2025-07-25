@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../../../styles/Latency.css"
+import "./Latency.css"
 
 const generateLatency = (latency) => {
     if(latency < 100){

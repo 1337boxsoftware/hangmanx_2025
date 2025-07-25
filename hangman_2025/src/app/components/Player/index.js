@@ -1,14 +1,15 @@
+"use client"
 import React, { Component } from 'react'
 import SessionModel, { 
         ScoreModel 
-        }                   from '../../../../models/Session'
+        }                   from '@/models/Session'
 import GameModel, { 
          GuessesModel,
          PlayersModel 
-        }                   from '../../../../models/Game'
-import PlayerModel          from '../../../../models/Player'
-import playerFactory        from '../../factory/Player'
-import GameClient           from './scenes/GameClient/GameClient.js'
+        }                   from '@/models/Game'
+import PlayerModel          from '@/models/Player'
+import playerFactory        from '@/factory/Player'
+import GameClient           from '@/components/GameClient'
 
 class Player extends Component {
     constructor(props){

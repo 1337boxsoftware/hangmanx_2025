@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../../../styles/Players.css"
+import "./Players.css"
 
 const textForPlayer         = (you, player) => {
     return you ? <React.Fragment>you</React.Fragment> : <React.Fragment>player{player}</React.Fragment>

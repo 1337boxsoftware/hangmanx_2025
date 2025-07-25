@@ -22,7 +22,7 @@
 }
 
 .wrd-grd__bar--prmry {
-    background: url("../../public/gamebar2x.jpg");
+    background: url("../../../../public/gamebar2x.jpg");
 }
 
 .wrd-grd__itm:nth-of-type(1) .ltr { animation-delay: 0.8s; } 

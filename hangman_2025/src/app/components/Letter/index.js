@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../../../../styles/Letter.css"
+import "./Letter.css"
 
 const Letter = (props) => <div className={props.wrong ? "ltr clr--rd" : "ltr"}>{props.letter}</div>
 

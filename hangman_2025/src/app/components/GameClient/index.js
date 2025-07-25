@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import Scroll               from './components/Scroll'
-import Search               from './components/Search'
-import Latency              from './components/Latency'
-import Players              from './components/Players'
-import GameButton           from './components/GameButton'
-import Main                 from './components/Main'
-import Wrong                from './components/Wrong'
-import Word                 from './components/Word'
-import { GAMESTATUS }       from '../../../../../../models/Game'
+import Scroll               from '@/components/Scroll'
+import Search               from '@/components/Search'
+import Latency              from '@/components/Latency'
+import Players              from '@/components/Players'
+import GameButton           from '@/components/GameButton'
+import Main                 from '@/components/Main'
+import Wrong                from '@/components/Wrong'
+import Word                 from '@/components/Word'
+import { GAMESTATUS }       from '@/models/Game'
 
-import "../../../../styles/Game.css"
+import "./GameClient.css"
 const TOTALWRONGGUESSES = 6
 
 class GameClient extends Component{
