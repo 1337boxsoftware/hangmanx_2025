@@ -1,0 +1,69 @@
+
+.flt--rght {
+    float: right
+}
+
+.flt--lft {
+    float: left
+}
+
+.flx--mdl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flx {
+    display: flex;
+}
+
+.flx--row {
+    display: flex;
+    flex-direction: row;
+}
+
+.jstfy-cntnt--cntr {
+    justify-content: center;
+}
+
+.algn-itms--cntr {
+    align-items: center;
+}
+
+.flx--clm {
+    flex-direction: column;
+}
+
+.box--pos-abs-top {
+    position: absolute;
+    top: 0px;
+}
+
+.clr--grn {
+    color: green;
+}
+
+.clr--ylw {
+    color: yellow;
+}
+
+.clr--wht {
+    color: RGB(233,233,233);
+}
+
+.clr--rd {
+    color: red;
+}
+
+.vsblty--hdn {
+    visibility: hidden;
+}
+
+@keyframes becomeVisible {
+    0% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }

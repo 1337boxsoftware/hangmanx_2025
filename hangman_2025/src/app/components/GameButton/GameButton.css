@@ -1,0 +1,18 @@
+.btn {
+    height: 13%;
+    margin: 3% 14%;
+    font-size: 50%;
+}
+
+.btn:hover {
+    color: RGB(100,100,100);
+}
+
+.btn__ptr{
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid;
+    margin-right: 1%;
+}

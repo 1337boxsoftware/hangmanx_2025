@@ -1,0 +1,26 @@
+.plyrs-contnr {
+    height: 14%;
+    width: 68%;
+}
+
+.plyrs__lst {
+    padding-inline-start: 0px;
+    width: 100%;
+    font-size: 50%;
+}
+
+.plyrs__trn {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 400%;
+    font-family: 'Jersey';
+}
+
+.plyrs__plyr {
+    width: 38%;
+}
+
+.plyrs__plyr-you {
+    width: 24%;
+}
