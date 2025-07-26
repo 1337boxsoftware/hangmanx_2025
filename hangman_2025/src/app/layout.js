@@ -1,8 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+//import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./common.css";
-
-const geistSans = Geist({
+import { Suspense } from "react";
+import Loading from "./loading";
+import Image from "next/image";
+import localFont from 'next/font/local';
+const jerseyFont = localFont({ src: '../../public/fonts/jersey/JerseyM54-aLX9.ttf' });
+const pixelFont = localFont({ src: '../../public/fonts/pixel/PixelEmulator-xq08.ttf' });
+/*const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
@@ -10,7 +15,7 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-});
+});*/
 
 export const metadata = {
   title: "Create Next App",
@@ -20,8 +25,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+                <body>
+        {/* Your content */}
+          {children}
       </body>
     </html>
   );

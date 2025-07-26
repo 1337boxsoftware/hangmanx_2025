@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Players.css"
 
+import localFont from 'next/font/local';
+const jerseyFont = localFont({ src: '../../../../public/fonts/jersey/JerseyM54-aLX9.ttf' });
+
 const textForPlayer         = (you, player) => {
     return you ? <React.Fragment>you</React.Fragment> : <React.Fragment>player{player}</React.Fragment>
 }
@@ -48,7 +51,7 @@ const generatePlayers = (player, players, turn, seconds) => {
     return generate([], 0)
 }
 
-const Players = (props) => <div className="plyrs-contnr plyrs-cntnr-styl-1 flx flt--rght algn-itms--cntr">
+const Players = (props) => <div className={`${jerseyFont.className} plyrs-contnr plyrs-cntnr-styl-1 flx flt--rght algn-itms--cntr`}>
                                 <ul className="plyrs__lst flx--row">
                                     {generatePlayers(props.player, props.players, props.turn, props.seconds)}
                                 </ul>

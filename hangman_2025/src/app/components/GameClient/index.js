@@ -8,9 +8,12 @@ import Main                 from '@/components/Main'
 import Wrong                from '@/components/Wrong'
 import Word                 from '@/components/Word'
 import { GAMESTATUS }       from '@/models/Game'
+import Image from 'next/image';
 
 import "./GameClient.css"
 const TOTALWRONGGUESSES = 6
+import localFont from 'next/font/local';
+const pixelFont = localFont({ src: '../../../../public/fonts/pixel/PixelEmulator-xq08.ttf' });
 
 class GameClient extends Component{
     constructor(props){
@@ -29,7 +32,7 @@ class GameClient extends Component{
         const mdlPlayers        = mdlGame.mdlPlayers()
         const mdlGuesses        = mdlGame.mdlGuesses()
 
-        return <div className='gm gm--prmry clr--wht'>
+        return <div className={`${pixelFont.className} gm gm--prmry clr--wht`}>
                 <Scroll onItemClick={this.onGuess} skull={mdlGame.mdlGuesses().wrong()} smiley={mdlGame.mdlGuesses().correct()}/>
                 <Latency latency={this.props.latency}/>
                 <Players    player={this.props.id}
