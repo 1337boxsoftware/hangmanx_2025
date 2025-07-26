@@ -2,19 +2,19 @@ import http             from 'http'
 import websocket        from 'websocket'
 
 import  SessionModel, 
-        { ScoreModel }  from '../models/Session'
+        { ScoreModel }  from './models/Session.js'
 
-import ServerSession    from './Session'
+import ServerSession    from './Session.js'
 
 import { ServerGameError, 
-          SGERRORS }    from '../models/server/ServerGame'
+          SGERRORS }    from './models/server/ServerGame.js'
 
 import { GAMESTATUS, 
          GuessesModel,
-         PlayersModel } from '../models/Game'
+         PlayersModel } from './models/Game.js'
 
-import ServerGameModel  from '../models/server/ServerGame'
-import wordsStore       from './store/Words'
+import ServerGameModel  from './models/server/ServerGame.js'
+import wordsStore       from './store/Words.js'
 
 export default class ServerGame{
     constructor(MAXCLIENTS, PORT, MAXCONNECTIONSPERUSER, UNIQUEPLAY){

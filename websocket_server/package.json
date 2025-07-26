@@ -1,0 +1,17 @@
+{
+  "name": "websocket_server",
+  "version": "1.0.0",
+  "description": "hangman websocket server",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node ./Server.js"
+  },
+  "author": "yevgeniy skroznikov",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/node": "^7.7.4",
+    "n-readlines": "^1.0.1",
+    "websocket": "^1.0.35"
+  }
+}

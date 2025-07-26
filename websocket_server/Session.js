@@ -1,15 +1,15 @@
 import  SessionModel, 
-        { ScoreModel }      from '../models/Session'
+        { ScoreModel }      from './models/Session.js'
 
 import  { GAMESTATUS, 
           PlayersModel, 
-          GuessesModel }    from '../models/Game'
+          GuessesModel }    from './models/Game.js'
 
 import  ServerGameModel, 
         { ServerGameError, 
-          SGERRORS }        from '../models/server/ServerGame'
+          SGERRORS }        from './models/server/ServerGame.js'
           
-import  wordsStore          from './store/Words'
+import  wordsStore          from './store/Words.js'
 
 export default class ServerSession{
     static sessionErrorJSON(error){

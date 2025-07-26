@@ -1,4 +1,10 @@
-const LineByLine = require('n-readlines');
+import LineByLine from 'n-readlines';
+
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 class WordsStore{
     constructor(wordFile, wonFile, lostFile){
