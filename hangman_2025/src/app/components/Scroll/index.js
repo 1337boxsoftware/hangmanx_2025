@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import svgSkull from '../../../../public/skull.svg'
-import svgSmiley from '../../../../public/smiley.svg'
 import './Scroll.css'
 
+const svgSkull = 'skull.svg';
+const svgSmiley = 'smiley.svg';
 const ItemContentWrong      = (props) => <img className="scrl__wrng" src={props.image}/>
 const ItemContentCorrect    = (props) => <img className="scrl__crct" src={props.image}/>
 const ItemContentText       = (props) => <span className="scrl__cntnt" onClick={props.onClick}>{props.text}</span>
