@@ -32,7 +32,16 @@ class GameClient extends Component{
         const mdlPlayers        = mdlGame.mdlPlayers()
         const mdlGuesses        = mdlGame.mdlGuesses()
 
-        return <div className={`${pixelFont.className} gm gm--prmry clr--wht`}>
+        return <div className={`${pixelFont.className} gm gm--prmry clr--wht `} style={{ backgroundImage: "url(/800x600-1x2x-min.jpg)"}}>
+                                                        <div style={{ display: 'none' }}>
+                                    <Image
+                                        src='/800x600-1x2x-min.jpg'
+                                        alt="Preload background"
+                                        width={800} // Provide actual dimensions
+                                        height={600} // Provide actual dimensions
+                                        priority
+                                    />
+                                </div>
                 <Scroll onItemClick={this.onGuess} skull={mdlGame.mdlGuesses().wrong()} smiley={mdlGame.mdlGuesses().correct()}/>
                 <Latency latency={this.props.latency}/>
                 <Players    player={this.props.id}

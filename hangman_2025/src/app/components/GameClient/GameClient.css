@@ -11,7 +11,6 @@
 
 .gm--prmry {
     border-color: RGB(6,6,6);
-    background: url('../../../../public/800x600-1x2x-min.jpg') no-repeat;
     background-size: contain;
 }
 /* 200px 150px 12px - 400px 300px 24px 800px 600px 48px */
