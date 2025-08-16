@@ -1,5 +1,6 @@
-import http             from 'http'
+import http             from 'https'
 import websocket        from 'websocket'
+import fs from 'fs';
 
 import  SessionModel, 
         { ScoreModel }  from './models/Session.js'
@@ -240,7 +241,11 @@ export default class ServerGame{
         }
 
         const _createServer = () => {
-            return http.createServer(function(request, response) {
+            const privateKey = fs.readFileSync('./credentials/privkey.pem', 'utf8');
+            const certificate = fs.readFileSync('./credentials/fullchain.crt', 'utf8');
+            const credentials = { key: privateKey, cert: certificate };
+
+            return http.createServer(credentials, function(request, response) {
                 response.writeHead(404);
                 response.end();
             });

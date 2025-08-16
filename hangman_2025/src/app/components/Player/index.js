@@ -25,7 +25,7 @@ class Player extends Component {
 
     componentDidMount(){
         window.WebSocket    = window.WebSocket || window.MozWebSocket;
-        this.wsGameClient   = new WebSocket('ws://13.58.7.241:3001');
+        this.wsGameClient   = new WebSocket('wss://www.game.hangmanx.com:3000');
 
         this.wsGameClient.onmessage = (msg) => {
             this.setStateFromJson(msg.data)
@@ -55,8 +55,6 @@ class Player extends Component {
     setStateFromJson = (json) => {
         const now       = Date.now()
         const obj       = JSON.parse(json)
-        console.log("now", now);
-        console.log(obj.timestamp);
         const latency   = parseInt(obj.timestamp) - now;
         const mdlPlayer = this.createPlayerFromObj(obj.player)
         this.setState({mdlPlayer, latency})
