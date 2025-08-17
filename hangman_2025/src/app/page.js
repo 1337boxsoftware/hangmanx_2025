@@ -14,6 +14,7 @@ export default function Home() {
                             priority
                         />
                     </div>
+          <h1>HangmanX - thrilling multiplayer Hangman</h1>
           <Player />
         </div>
 };
